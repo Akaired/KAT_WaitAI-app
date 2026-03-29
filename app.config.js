@@ -31,7 +31,7 @@ module.exports = {
       url: 'https://u.expo.dev/944af668-11f8-48b8-88d7-7c51ce0341b5',
     },
     runtimeVersion: {
-      policy: 'appVersion',
+      policy: 'sdkVersion',
     },
     plugins: ['expo-router', 'expo-secure-store'],
     experiments: { typedRoutes: true },
