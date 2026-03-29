@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "Wait",
-    "slug": "wait-app",
+    "slug": "waitai-app",
     "version": "1.0.0",
     "scheme": "waitapp",
     "orientation": "portrait",
@@ -34,6 +34,7 @@
     },
     "experiments": {
       "typedRoutes": true
-    }
+    },
+    "owner": "akaireds-organization"
   }
 }
