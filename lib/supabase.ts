@@ -1,8 +1,11 @@
 import { createClient } from '@supabase/supabase-js';
 import * as SecureStore from 'expo-secure-store';
+import Constants from 'expo-constants';
 
-const supabaseUrl  = process.env.EXPO_PUBLIC_SUPABASE_URL  ?? '';
-const supabaseKey  = process.env.EXPO_PUBLIC_SUPABASE_ANON_KEY ?? '';
+const extra = (Constants.expoConfig?.extra ?? {}) as Record<string, string>;
+
+const supabaseUrl  = process.env.EXPO_PUBLIC_SUPABASE_URL  ?? extra.supabaseUrl ?? '';
+const supabaseKey  = process.env.EXPO_PUBLIC_SUPABASE_ANON_KEY ?? extra.supabaseKey ?? '';
 
 // SecureStore adapter for Supabase session persistence
 const ExpoSecureStoreAdapter = {

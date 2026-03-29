@@ -35,6 +35,12 @@
     "experiments": {
       "typedRoutes": true
     },
-    "owner": "akaireds-organization"
+    "owner": "akaireds-organization",
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/944af668-11f8-48b8-88d7-7c51ce0341b5"
+    }
   }
 }

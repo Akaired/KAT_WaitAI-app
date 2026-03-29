@@ -1,6 +1,8 @@
 import { supabase } from './supabase';
+import Constants from 'expo-constants';
 
-const API_BASE = process.env.EXPO_PUBLIC_API_BASE ?? 'https://lab.davidemaiorana.dev';
+const extra = (Constants.expoConfig?.extra ?? {}) as Record<string, string>;
+const API_BASE = process.env.EXPO_PUBLIC_API_BASE ?? extra.apiBase ?? 'https://lab.davidemaiorana.dev';
 
 async function authHeaders(): Promise<Record<string, string>> {
   const { data: { session } } = await supabase.auth.getSession();
