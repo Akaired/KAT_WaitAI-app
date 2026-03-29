@@ -5,6 +5,7 @@ module.exports = {
   expo: {
     name: IS_DEV ? 'Wait (dev)' : 'Wait',
     slug: 'waitai-app',
+    owner: 'akaireds-organization',
     version: '1.0.0',
     scheme: 'waitapp',
     orientation: 'portrait',
